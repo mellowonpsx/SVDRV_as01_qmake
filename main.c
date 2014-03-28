@@ -556,12 +556,12 @@ int main()
     // get current directory, may not work on certain system
     char *current_directory = (char *)get_current_dir_name();
     printf("Current directory is: %s\n", current_directory);
-    printf("Please put file image file in \"../As_01_material_04-03-14/image.txt\"\n");
-    printf("Please put all database file in \"../As_01_material_04-03-14/db/\"\n");
+    printf("Please put file image file in \"../SVDRV_as01_qmake/As_01_material_04-03-14/image.txt\"\n");
+    printf("Please put all database file in \"../SVDRV_as01_qmake/As_01_material_04-03-14/db/\"\n");
     printf("Each file will be readed and compared\n");
 
     // open image file to elaborate
-    imgFile = fopen("../As_01_material_04-03-14/image.txt","r");
+    imgFile = fopen("../SVDRV_as01_qmake/As_01_material_04-03-14/image.txt","r");
 
     if(imgFile == NULL)
     {
@@ -582,7 +582,7 @@ int main()
 
     // open database directory
     DIR *db_dir;
-    const char db_dir_str[]="../As_01_material_04-03-14/db/";
+    const char db_dir_str[]="../SVDRV_as01_qmake/As_01_material_04-03-14/db/";
 
     db_dir = opendir(db_dir_str);
 
